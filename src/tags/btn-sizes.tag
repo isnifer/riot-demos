@@ -1,6 +1,6 @@
 <btn-sizes>
     <div class="bs-example">
-        <btn each={button in buttons} classname={button.classname} text={button.text} size={button.size} /> {opts.i}
+        <btn each={button in buttons} classname={button.classname} text={button.text} size={button.size} />
     </div>
 
     this.buttons = [
