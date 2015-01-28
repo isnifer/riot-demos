@@ -1,8 +1,8 @@
 <buttons>
 
-    <btn each={button in buttons} classname={button} text={button} />
+    <btn each={button in buttons} classname={button} text={button}></btn>
 
-    <btn-sizes />
+    <btn-sizes>
 
     this.buttons = ['default', 'primary', 'success', 'info', 'warning', 'danger', 'link'];
 
