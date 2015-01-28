@@ -8,15 +8,11 @@
     <meta name="keywords" content="first second third key word"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//getbootstrap.com/assets/css/docs.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css"/>
     <!--[if lt IE 9]>
     <script src="assets/js/libs/html5shiv-printshiv.js"></script>
     <![endif]-->
-    <style>
-        btn {
-            display: inline-block;
-        }
-    </style>
 </head>
 
 <body>
@@ -28,16 +24,16 @@
         <div class="main">
             <h2 id="buttons-options">Options</h2>
             <p>Use any of the available button classes to quickly create a styled button.</p>
-            <div class="bs-example" data-example-id="btn-variants">
-                <buttons>
-            </div>
+            <buttons-good></buttons-good>
+            <buttons-with-wrapper></buttons-with-wrapper>
+            <buttons-bad></buttons-bad>
         </div>
 
     </div>
 
     <script src="//cdn.jsdelivr.net/riot/2.0.5/riot.js"></script>
     <script src="assets/js/tags.min.js"></script>
-    <script>riot.mount('buttons')</script>
+    <script>riot.mount('*')</script>
 
     <script src="//localhost:35729/livereload.js"></script>
 

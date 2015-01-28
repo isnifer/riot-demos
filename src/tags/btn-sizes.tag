@@ -1,7 +1,5 @@
 <btn-sizes>
-    <div class="bs-example">
-        <btn each={button in buttons} classname={button.classname} text={button.text} size={button.size} />
-    </div>
+    <btn each={button in buttons} classname={button.classname} text={button.text} size={button.size} />
 
     this.buttons = [
         {classname: 'primary', text: 'Primary button text', size: 'lg'},

@@ -1,12 +1,33 @@
-<buttons>
+<buttons-good>
 
+    <btn-sizes></btn-sizes>
     <btn each={button in buttons} classname={button} text={button}></btn>
-
-    <btn-sizes>
 
     this.buttons = ['default', 'primary', 'success', 'info', 'warning', 'danger', 'link'];
 
-</buttons>
+</buttons-good>
+
+<buttons-with-wrapper>
+
+    <div class="bs-example">
+        <btn each={button in buttons} classname={button} text={button}></btn>
+    </div>
+    <div class="bs-example">
+        <btn-sizes></btn-sizes>
+    </div>
+
+    this.buttons = ['default', 'primary', 'success', 'info', 'warning', 'danger', 'link'];
+
+</buttons-with-wrapper>
+
+<buttons-bad>
+
+    <btn each={button in buttons} classname={button} text={button}></btn>
+    <btn-sizes><h1>TAG CONTENT GENERATE TWICE</h1></btn-sizes>
+
+    this.buttons = ['default', 'primary', 'success', 'info', 'warning', 'danger', 'link'];
+
+</buttons-bad>
 
 <btn>
     <button class={classname} type={type}>{ opts.text }</button>
