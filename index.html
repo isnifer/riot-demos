@@ -22,11 +22,39 @@
         <header class="header">It works fine!</header>
 
         <div class="main">
-            <h2 id="buttons-options">Options</h2>
-            <p>Use any of the available button classes to quickly create a styled button.</p>
-            <buttons-good></buttons-good>
-            <buttons-with-wrapper></buttons-with-wrapper>
-            <buttons-bad></buttons-bad>
+            <h1>Custom tags render difference test</h1>
+            <ul>
+                <li>
+                    <a href="tests/each/ok-buttons-good.html" class="btn btn-link">
+                        OK, because btn-size BEFORE each
+                    </a>
+                </li>
+                <li>
+                    <a href="tests/each/ok-buttons-with-wrapper.html" class="btn btn-link">
+                        OK, because btn-size and each have wrappers
+                    </a>
+                </li>
+                <li>
+                    <a href="tests/each/fail-buttons-bad.html" class="btn btn-link">
+                        FAIL, because btn-sizes AFTER each and without wrapper
+                    </a>
+                </li>
+                <li>
+                    <a href="tests/each/fail-buttons-fail-one.html" class="btn btn-link">
+                        FAIL, because EACH haven't closing tag and btn-size AFTER each
+                    </a>
+                </li>
+                <li>
+                    <a href="tests/each/fail-buttons-fail-two.html" class="btn btn-link">
+                        FAIL, because EACH have self-closing tag and btn-size AFTER each
+                    </a>
+                </li>
+                <li>
+                    <a href="tests/each/fail-buttons-fail-three.html" class="btn btn-link">
+                        FAIL, because EACH have closing tag and btn-size AFTER each
+                    </a>
+                </li>
+            </ul>
         </div>
 
     </div>

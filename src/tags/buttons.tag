@@ -1,11 +1,11 @@
-<buttons-good>
+<buttons-bad>
 
+    <btn each={button in buttons} classname={button} text={button} />
     <btn-sizes></btn-sizes>
-    <btn each={button in buttons} classname={button} text={button}></btn>
 
     this.buttons = ['default', 'primary', 'success', 'info', 'warning', 'danger', 'link'];
 
-</buttons-good>
+</buttons-bad>
 
 <buttons-with-wrapper>
 
@@ -20,19 +20,52 @@
 
 </buttons-with-wrapper>
 
-<buttons-bad>
+<buttons-good>
 
+    <btn-sizes></btn-sizes>
     <btn each={button in buttons} classname={button} text={button}></btn>
-    <btn-sizes><h1>TAG CONTENT GENERATE TWICE</h1></btn-sizes>
 
     this.buttons = ['default', 'primary', 'success', 'info', 'warning', 'danger', 'link'];
 
-</buttons-bad>
+</buttons-good>
+
+<buttons-fail-one>
+
+    <div class="bs-example">
+        <btn each={button in buttons} classname={button} text={button}>
+        <btn-sizes></btn-sizes>
+    </div>
+
+    this.buttons = ['default', 'primary', 'success', 'info', 'warning', 'danger', 'link'];
+
+</buttons-fail-one>
+
+<buttons-fail-two>
+
+    <div class="bs-example">
+        <btn each={button in buttons} classname={button} text={button}></btn>
+        <btn-sizes></btn-sizes>
+    </div>
+
+    this.buttons = ['default', 'primary', 'success', 'info', 'warning', 'danger', 'link'];
+
+</buttons-fail-two>
+
+<buttons-fail-three>
+
+    <div class="bs-example">
+        <btn each={button in buttons} classname={button} text={button} />
+        <btn-sizes></btn-sizes>
+    </div>
+
+    this.buttons = ['default', 'primary', 'success', 'info', 'warning', 'danger', 'link'];
+
+</buttons-fail-three>
 
 <btn>
-    <button class={classname} type={type}>{ opts.text }</button>
+    <button class={classname} type={type}>{ text }</button>
 
-    var classname = opts.classname.split(' ');
+    var classname = opts.classname ? opts.classname.split(' ') : ['default'];
 
     <!-- ClassNames: default, primary, success, info, warning, danger, link -->
     this.classname = 'btn btn-' + classname.join(' btn-');
@@ -42,5 +75,7 @@
 
     <!-- Size: lg, sm, xs -->
     this.classname += opts.size ? ' btn-' + opts.size : '';
+
+    this.text = opts.text ? opts.text : 'default';
 
 </btn>
