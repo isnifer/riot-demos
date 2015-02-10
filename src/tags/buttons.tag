@@ -29,17 +29,6 @@
 
 </buttons-good>
 
-<buttons-fail-one>
-
-    <div class="bs-example">
-        <btn each={button in buttons} classname={button} text={button}>
-        <btn-sizes></btn-sizes>
-    </div>
-
-    this.buttons = ['default', 'primary', 'success', 'info', 'warning', 'danger', 'link'];
-
-</buttons-fail-one>
-
 <buttons-fail-two>
 
     <div class="bs-example">
