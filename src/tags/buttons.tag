@@ -65,19 +65,17 @@
 <btn>
     <button class={classname} type={type}>{ text }</button>
 
-    <script>
-        var classname = opts.classname ? opts.classname.split(' ') : ['default'];
+    var classname = opts.classname ? opts.classname.split(' ') : ['default'];
 
-        <!-- ClassNames: default, primary, success, info, warning, danger, link -->
-        this.classname = 'btn btn-' + classname.join(' btn-');
+    <!-- ClassNames: default, primary, success, info, warning, danger, link -->
+    this.classname = 'btn btn-' + classname.join(' btn-');
 
-        <!-- Types: button, submit, etc. -->
-        this.type = opts.type ? opts.type : 'button';
+    <!-- Types: button, submit, etc. -->
+    this.type = opts.type ? opts.type : 'button';
 
-        <!-- Size: lg, sm, xs -->
-        this.classname += opts.size ? ' btn-' + opts.size : '';
+    <!-- Size: lg, sm, xs -->
+    this.classname += opts.size ? ' btn-' + opts.size : '';
 
-        this.text = opts.text ? opts.text : 'default';
-    </script>
+    this.text = opts.text ? opts.text : 'default';
 
 </btn>
