@@ -26,32 +26,32 @@
             <ul>
                 <li>
                     <a href="tests/each/ok-buttons-good.html" class="btn btn-link">
-                        OK, because btn-size BEFORE each
+                        OK - «btn-size» BEFORE each
                     </a>
                 </li>
                 <li>
                     <a href="tests/each/ok-buttons-with-wrapper.html" class="btn btn-link">
-                        OK, because btn-size and each have wrappers
+                        OK - «btn-size» and each have wrappers
                     </a>
                 </li>
                 <li>
                     <a href="tests/each/fail-buttons-bad.html" class="btn btn-link">
-                        FAIL, because btn-sizes AFTER each and without wrapper
-                    </a>
-                </li>
-                <li>
-                    <a href="tests/each/fail-buttons-fail-one.html" class="btn btn-link">
-                        FAIL, because EACH haven't closing tag and btn-size AFTER each
+                        OK - «btn-size» AFTER «each» and without wrapper (It was FAIL in 2.0.7)
                     </a>
                 </li>
                 <li>
                     <a href="tests/each/fail-buttons-fail-two.html" class="btn btn-link">
-                        FAIL, because EACH have self-closing tag and btn-size AFTER each
+                        OK - «EACH» have self-closing tag and «btn-size» AFTER each (It was FAIL in 2.0.7)
                     </a>
                 </li>
                 <li>
                     <a href="tests/each/fail-buttons-fail-three.html" class="btn btn-link">
-                        FAIL, because EACH have closing tag and btn-size AFTER each
+                        OK - «EACH» have self-closing tag and «btn-size» AFTER each. (It was FAIL in 2.0.7)
+                    </a>
+                </li>
+                <li>
+                    <a href="tests/each/fail-buttons-fail-one.html" class="btn btn-link">
+                        FAIL, because EACH haven't closing tag and btn-size AFTER each (Another problem in 2.0.8)
                     </a>
                 </li>
             </ul>
@@ -59,7 +59,7 @@
 
     </div>
 
-    <script src="//cdn.jsdelivr.net/riot/2.0.7/riot.js"></script>
+    <script src="//cdn.jsdelivr.net/riot/2.0.8/riot.js"></script>
     <script src="assets/js/tags.min.js"></script>
     <script>riot.mount('*')</script>
 
